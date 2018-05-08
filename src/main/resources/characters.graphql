@@ -1,0 +1,17 @@
+schema {
+ query : Query
+}
+ 
+type Query {
+ byUniverse(universe: String): [Character]
+ byName(name: String): [Character]
+ byFavoriteBeer(name: String): [Character]
+ all: [Character]
+}
+ 
+type Character {
+ id : Long
+ name: String
+ universe: String
+ favoriteBeer: String
+}
