@@ -21,7 +21,7 @@ public class CharacterByNameFetcher implements DataFetcher<List<Character>> {
 
 	@Override
 	public List<Character> get(DataFetchingEnvironment fetch) {
-		return repository.findByNameLike(fetch.getArgument("name"));
+		return repository.findByNameContaining(fetch.getArgument("name"));
 	}
 
 }

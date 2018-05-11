@@ -10,9 +10,9 @@ public interface CharacterRepository extends CrudRepository<Character, Long> {
 
 	List<Character> findByUniverse(String universe);
 
-	List<Character> findByNameLike(String name);
+	List<Character> findByNameContaining(String name);
 
-	List<Character> findByFavoriteBeerLike(String beer);
+	List<Character> findByFavoriteBeerContaining(String beer);
 
 	List<Character> findAll();
 }

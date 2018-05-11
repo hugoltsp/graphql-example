@@ -21,7 +21,7 @@ public class CharacterByFavoriteBeerFetcher implements DataFetcher<List<Characte
 
 	@Override
 	public List<Character> get(DataFetchingEnvironment fetch) {
-		return this.repository.findByFavoriteBeerLike(fetch.getArgument("beer"));
+		return this.repository.findByFavoriteBeerContaining(fetch.getArgument("favoriteBeer"));
 	}
 
 }
