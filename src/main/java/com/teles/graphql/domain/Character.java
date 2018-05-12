@@ -50,4 +50,10 @@ public class Character {
 		this.favoriteBeer = favoriteBeer;
 	}
 
+	@Override
+	public String toString() {
+		return "Character {id: " + id + ", name: " + name + ", universe: " + universe + ", favoriteBeer: "
+				+ favoriteBeer + "}";
+	}
+
 }

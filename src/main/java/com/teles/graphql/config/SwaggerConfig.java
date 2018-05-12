@@ -17,7 +17,6 @@ public class SwaggerConfig {
 	
 	@Bean
 	public Docket api() {
-
 		return new Docket(SWAGGER_2)
 				.select()
 				.apis(withClassAnnotation(Api.class))

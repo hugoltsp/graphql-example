@@ -20,7 +20,7 @@ public class CharacterGraphQLEndpoint {
 		this.graphQL = graphQL;
 	}
 
-	@PostMapping("/graphql")
+	@PostMapping
 	public ResponseEntity<?> postGraphql(@RequestBody String body) {
 		return ResponseEntity.ok(graphQL.execute(body).getData());
 	}

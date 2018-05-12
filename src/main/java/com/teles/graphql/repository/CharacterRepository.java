@@ -15,4 +15,5 @@ public interface CharacterRepository extends CrudRepository<Character, Long> {
 	List<Character> findByFavoriteBeerContaining(String beer);
 
 	List<Character> findAll();
+	
 }
