@@ -41,7 +41,7 @@ public class CharacterByFavoriteBeerFetcherTest {
         Character character = new Character();
         character.setFavoriteBeer("Baden Baden Red Ale");
         character.setId(1L);
-        character.setName("Jhon Snow");
+        character.setName("Jon Snow");
         character.setUniverse("Game of Thrones");
 
         expectedCharacters.add(character);
@@ -62,7 +62,7 @@ public class CharacterByFavoriteBeerFetcherTest {
         Character character = new Character();
         character.setFavoriteBeer("Baden Baden Red Ale");
         character.setId(1L);
-        character.setName("Jhon Snow");
+        character.setName("Jon Snow");
         character.setUniverse("Game of Thrones");
 
         characters.add(character);
